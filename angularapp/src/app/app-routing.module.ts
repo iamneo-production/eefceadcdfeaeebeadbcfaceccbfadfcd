@@ -1,11 +1,7 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ForexConverterComponent } from './forex-converter/forex-converter.component';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/forex-converter', pathMatch: 'full' },
-  { path: 'forex-converter', component: ForexConverterComponent }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
