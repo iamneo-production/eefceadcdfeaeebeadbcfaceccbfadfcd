@@ -1,0 +1,27 @@
+<div>
+    <form>
+      <label for="fromCurrency">Source CCY:</label>
+      <select id="fromCurrency" [(ngModel)]="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+      </select>
+  
+      <label for="toCurrency">Target CCY:</label>
+      <select id="toCurrency" [(ngModel)]="toCurrency">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+      </select>
+  
+      <label for="amount">Amount (Rs):</label>
+      <input type="number" id="amount" [(ngModel)]="amount" />
+  
+      <button type="button" (click)="convert()">Submit</button>
+    </form>
+  
+    <div id="result" *ngIf="result !== null">
+      Conversion Result: <span id="resValue">{{ result }}</span>
+    </div>
+  </div>
+  
