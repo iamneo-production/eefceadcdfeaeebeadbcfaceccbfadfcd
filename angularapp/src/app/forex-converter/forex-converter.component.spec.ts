@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { ForexConverterComponent } from './forex-converter.component';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 describe('ForexConverterComponent', () => {
   let component: ForexConverterComponent;
@@ -8,8 +8,7 @@ describe('ForexConverterComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ForexConverterComponent],
-      imports: [FormsModule], // Add FormsModule here
+      declarations: [ForexConverterComponent]
     });
     fixture = TestBed.createComponent(ForexConverterComponent);
     component = fixture.componentInstance;
